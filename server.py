@@ -31,9 +31,7 @@ app = Flask(__name__)
 def hello_monkey():
         """Respond to incoming calls with a simple text message."""
         sms = request.args.get('Body')
-        print sms
         if not sms == "":
-                print "ok"
                 speakSpeechFromText(sms)
 
         resp = twilio.twiml.Response()
@@ -41,6 +39,6 @@ def hello_monkey():
         return str(resp)
 
 if __name__ == "__main__":
-	print "Hello server"
+	print "Hello twilio"
         app.run( host='0.0.0.0', debug=True, port = 8080)
 
