@@ -6,4 +6,4 @@ echo "root:$PASSWD" | chpasswd
 #Spawn dropbear
 dropbear -E -F-s &
 #start your application from here...
-python app/server_example.py
+python app/server.py
