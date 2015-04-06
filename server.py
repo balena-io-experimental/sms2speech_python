@@ -41,5 +41,6 @@ def hello_monkey():
         return str(resp)
 
 if __name__ == "__main__":
+	print "Hello server"
         app.run( host='0.0.0.0', debug=True, port = 8080)
 
