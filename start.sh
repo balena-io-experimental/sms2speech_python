@@ -1,5 +1,4 @@
 #!/bin/bash
-#test
 #Set the root password as root if not set as an ENV variable
 export PASSWD=${PASSWD:=root}
 #Set the root password
